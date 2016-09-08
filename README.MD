@@ -2,12 +2,13 @@ JSConf参会笔记
 ===============
 
 ## 前言
-这次大会总共有20个topic（实际为19个，有个npm环节因为作者无法到现场被临时取消了），以及额外的Lightning Talk环节，其中使用英语分享占到7场，所以英语很重要有木有。每个topic都介绍一遍过去我觉得意义不大，并且说实话有几个主题可能平常接触的不多，我也没有深入去了解过，所以主要挑选自己觉得对我比较有价值的几个主题介绍。[知乎帖子传送门](https://www.zhihu.com/question/50244455)
+这次大会总共有20个topic（实际为19个，有个主题因为分享者无法到现场被临时取消了），以及额外的Lightning Talk环节，其中使用英语分享占到7场，所以英语很重要有木有。每个topic都介绍一遍过去我觉得意义不大，并且说实话有几个主题可能平常接触的不多，我也没有深入去了解过，所以主要挑选自己觉得对我比较有价值的几个主题介绍。[知乎帖子传送门](https://www.zhihu.com/question/50244455)
 
 ## 会场花絮
 1. 参会者中最小的有高中生了，自费的也占了挺大部分的。
 2. Lightning Talk环节蛮有趣的
 3. pm2的作者，现场开源了另外一个基于pm2的项目GridControl👏👏👏👏👏👏
+4. 有一个哥们介绍了自己的经历，这是第四次来参加JSConf, 然后从一个小菜鸟，一步步通过在Lightning Talk发言最后有机会上台分享一个完整的topic，挺励志的
 
 ## 分享主题
 ### 1、Vue.js the Past and the Future
@@ -19,7 +20,7 @@ ps: 犹大被安利到weex团队担任技术顾问了，后续可以更好的整
 
 介绍点如下：
 
-	* 一个框架能够解决的问题是很多的，所以定位很重要，Vue只关注`声明式渲染`和`组件系统`，见下图
+	* 一个框架能够解决的问题是很多的，所以定位很重要，Vue只关注`声明式渲染`和`组件系统`，见附图第一张
 	* vue即将推出V2.0，faster and lightly，目前在完善文档，应该不用过多久就会推出
 	* virtual DOM，这块跟React最大不同是更智能的渲染机制，提前生成了依赖树，不用一层层递归判断shouldComponentUpdate
 	* 推荐优先使用Vue模板，实在较难实现的逻辑才使用Render Function来做
@@ -56,15 +57,12 @@ ps: 犹大被安利到weex团队担任技术顾问了，后续可以更好的整
 ### 5、GridControl: Networked PM2 for Microservices applications
 **关键字**：`micro service`
 
-PM2 author、fundation author
-MicroService
-GridControl,network layout
-Service Discovery/ Distributed File System/ Distributed Messageing
-
-npm install grid-cli -g
-现场开源
-
-
+* PM2 author
+* originised application
+* PM2 V2 will be released in September
+* microservice is hot but hard
+* [GridControl](https://github.com/gridcontrol/gridcontrol),network layout
+* Service Discovery/ Distributed File System/ Distributed Messageing
 
 ### 6、3D on the Web
 前面是webgl的简单介绍以及由此实现了一个demo，后面通过引入three.js来精简了大量的代码，提高了开发效率，引申出了使用three.js来进行web 3d开发，我觉得是蛮好的一种介绍方式的。因为大部分前端开发者其实在工作中蛮少能够接触到3D开发的，这方面也比较需要专业的知识，我觉得这类型的分享就是带领大家入门然后告诉大家这里面好玩炫酷的东西可多呢就挺好的了。[PPT传送门](http://www.shiyaluo.com/slidedecks/jsconf-china-2016/#/)
@@ -174,8 +172,13 @@ google protocol buffer
 2. 
 
 ### 19、Dev Tools
-VS Code Chrome debug
-启动一个服务，直接在代码处断点然后启动，编译器来做这块调试，比以前在web端调试简单多了，类似于node server的调试模式
+
+知识点：
+
+* web上进行调试多么麻烦
+* VS Code Chrome debug
+* 直接在JS代码处断点，使用编译器来做debug调试，比以前纯web端调试流程简单多了，类似于node server的调试模式，不过webstorm很早就可以做了。。。
+* 讲师自己的一些思考，比如如何支持IOS等移动端设备调试，为什么每个前端开发者使用
 
 ## 感受
 1. 这次南京的JSConf比上次去广州参加的FEDay靠谱多了，能感受到更浓厚的技术氛围，虽然广告和招聘还是无孔不入。其实参加这类型技术大会，主要还是为了拓宽下自己的思路和视野，了解下其他团队遇到问题后是如何思考和解决来产出他们的技术解决方案，看看这些业界的优秀团队都在玩些什么技术。看了饿了么的开源组件库我自己是有一些感触的，前端从远古时代到现在，组件库应该算是造轮子造的最多的一块了。最早的ExtJS、jQuery组件例如ztree，以及数不清的各类组件库，到后来我自己也做了PC端组件库Gazira和移动端的H5组件库Kami，有点换汤不换药的赶脚，这么多聪明的人为啥也没办法规划出一套通用解决方案呢。
@@ -185,16 +188,16 @@ VS Code Chrome debug
 5. 在React技术栈中，map, filter, reduce等几个数组操作函数经常被提及
 6. 有个匿名人士在Lightning Talk环节的分享总结的太犀利了，我鼓掌鼓的很欢乐哈哈。
 7. 技术分享大会其实并不是为了专门过去学习技术的，这个效果并不会很好，你得抱着过去开拓眼界和与他人交流的心态，更好一点的是去学习大神们解决问题的思路，去感受下现场那个技术氛围，看看热爱技术的这么一群人是如何玩技术的人。
-8. 有一个哥们介绍了自己的经历，刚毕业那年来参加JSConf, 然后一步步通过在Lightning Talk发言最后到有机会上台分享一整个topic的经历，挺励志的
 
 
 ## 附图：	
+[更多照片](http://mp.weixin.qq.com/s?__biz=MzA5NTQwMjc0NA==&mid=2650860988&idx=1&sn=61977a713b8f62851166f18a33f501c9&scene=1&srcid=0907XAqePlSwpJm08vB9Qxco#rd)
+
 ![img1](./img/WechatIMG13.jpeg)
 ![img2](./img/WechatIMG14.jpeg)
 ![img3](./img/WechatIMG15.jpeg)
 ![img4](./img/WechatIMG16.jpeg)
 ![img5](./img/WechatIMG17.jpeg)
-![img6](./img/WechatIMG18.jpeg)
 ![img7](./img/WechatIMG19.jpeg)
 ![img8](./img/WechatIMG20.jpeg)
 ![img9](./img/WechatIMG21.jpeg)
