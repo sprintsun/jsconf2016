@@ -2,15 +2,15 @@ JSConf参会笔记
 ===============
 
 ## 前言
-这次大会总共有20个topic（实际为19个，有个主题因为分享者无法到现场被临时取消了），以及额外的Lightning Talk环节，其中使用英语分享占到7场，所以英语很重要有木有。每个topic都介绍一遍过去我觉得意义不大，并且说实话有几个主题可能平常接触的不多，我也没有深入去了解过，所以主要挑选自己觉得对我比较有价值的几个主题介绍。[知乎帖子传送门](https://www.zhihu.com/question/50244455)
+这次大会总共有20个topic（实际为19个，有个主题因为分享者无法到现场被临时取消了），以及额外的Lightning Talk环节，其中使用英语分享占到7场，QA环节也大量使用英文来提问和回答，所以英语很重要有木有。[知乎帖子传送门](https://www.zhihu.com/question/50244455)
 
-## 会场花絮
+## 花絮
 1. 参会者中最小的有高中生了，自费的也占了挺大部分的。
 2. Lightning Talk环节蛮有趣的
-3. pm2的作者，现场开源了另外一个基于pm2的项目GridControl👏👏👏👏👏👏
+3. pm2的作者，现场直接开源了另外一个基于pm2的项目GridControl，掌声如雷啊👏👏👏
 4. 有一个哥们介绍了自己的经历，这是第四次来参加JSConf, 然后从一个小菜鸟，一步步通过在Lightning Talk发言最后有机会上台分享一个完整的topic，挺励志的
 
-## 分享主题
+## 主题
 ### 1、Vue.js the Past and the Future
 **关键字**：`Vue2.0`  `The Progressive Framework（渐进式框架）`
 
@@ -128,8 +128,7 @@ node --trace_gc --trace_gc_verbose app.js
 solution: 
 V8-profiler/node-inspector
 
-一堆广告，有点失望，朴灵大神
-
+一堆广告，有点失望啊朴灵大神
 
 ### 13、Learning Design Patterns from Modern JS Frameworks
 前端框架使用到什么设计模式
@@ -176,9 +175,10 @@ google protocol buffer
 知识点：
 
 * web上进行调试多么麻烦
-* VS Code Chrome debug
+* VS Code Chrome debug* 
 * 直接在JS代码处断点，使用编译器来做debug调试，比以前纯web端调试流程简单多了，类似于node server的调试模式，不过webstorm很早就可以做了。。。
-* 讲师自己的一些思考，比如如何支持IOS等移动端设备调试，为什么每个前端开发者使用
+* VS Code 与 chrome、Edge、nodejs交互的架构图
+* 讲师自己的一些思考，比如如何支持IOS等移动端设备调试
 
 ## 感受
 1. 这次南京的JSConf比上次去广州参加的FEDay靠谱多了，能感受到更浓厚的技术氛围，虽然广告和招聘还是无孔不入。其实参加这类型技术大会，主要还是为了拓宽下自己的思路和视野，了解下其他团队遇到问题后是如何思考和解决来产出他们的技术解决方案，看看这些业界的优秀团队都在玩些什么技术。看了饿了么的开源组件库我自己是有一些感触的，前端从远古时代到现在，组件库应该算是造轮子造的最多的一块了。最早的ExtJS、jQuery组件例如ztree，以及数不清的各类组件库，到后来我自己也做了PC端组件库Gazira和移动端的H5组件库Kami，有点换汤不换药的赶脚，这么多聪明的人为啥也没办法规划出一套通用解决方案呢。
