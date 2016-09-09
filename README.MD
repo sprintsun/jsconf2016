@@ -131,7 +131,16 @@ V8-profiler/node-inspector
 一堆广告，有点失望啊朴灵大神
 
 ### 13、Learning Design Patterns from Modern JS Frameworks
-前端框架使用到什么设计模式
+介绍的内容都是React社区也比较流行的一些设计，只是为啥扯到Design Patterns呢，难道是我对设计模式理解的太狭义了吗，一开始我确实有点懵逼了，Design Patterns跟OO、MVC这些并没有毛线关系的啊。后来匿名犀利哥也给吐槽了
+
+Design patterns popular in the current frontend framework world: 
+* Functional programming
+* Declarative and functional view rendering
+* Unidirectional data flow
+* Immutable data structure
+* Type system
+
+知识点记录：
 
 1. not pure function, hard to test，简而言之，就是方便来做测试
 2. high order function
@@ -139,23 +148,17 @@ V8-profiler/node-inspector
 4. js中没有type script的缺点，flow用来改善，react native中就使用到了
 
 ### 14、面向未来的自动化测试-Macaca
-有PPT，二维码
-UI测试
-electron开发测试套件
-https://xudafeng.github.io/slide/archives/ningjs/#/48
-
+因为有PPT了，所以就没有记录多少笔记下来，[PPT传送门](https://xudafeng.github.io/slide/archives/ningjs/)。通过electron开发了一整套的测试套件？下午坐太靠后了听的不是很清晰，这个值得一撸啊，最近大象PC也正在使用electron来进行开发，有参与了项目还是有点了解这个技术。
 ### 15、Managing Async with RxJS 5 at Netflix
-promise
-cann't cancel
-observable
-
-通过observable实现了各种异步的方法，并且提供了统一的方法给使用者调用,实现了自己的catch/cancel/,封装了ajax,socket,
+介绍了异步编程的坑，比如callback hell, 然后介绍promise cann't cancel，最后介绍了RxJS通过observable实现了各种异步的方法封装，并且提供了统一的方法给使用者调用,实现了自己的catch/cancel/,封装了ajax,socket，接触的不多，听说在Android社区很火，有空可以好好研究下。不过看到60+的API需要学习，还是有点腿软。。。
 
 ### 16、移动海量服务下基于React的高性能同构实践
-优化：
+来自腾讯娱乐事业部？的讲师，介绍了一个H5单页应用如何进行优化的整个过程。很多人吐槽这个除了Server Render其他的都跟React没啥关系，大量网络优化的介绍，真是标题党啊。。。
+
+优化步骤：
 SERVER RENDER
-RTT
-UDP
+减少RTT
+TCP -> UDP
 BUFFER
 CACHE
 component config 配置开关
@@ -163,7 +166,7 @@ google protocol buffer
 
 
 ### 17、Build a Better App with Mapbox
-地图产品，没太大兴趣听就出去溜达溜达了
+地图产品的介绍，没太大兴趣听就出去溜达溜达了
 
 ### 18、Using Nodejs to Count 30 Billion Requests per Day
 1. why do we need analytics
@@ -172,13 +175,22 @@ google protocol buffer
 
 ### 19、Dev Tools
 
+抛出自己的思考，然后给出解决办法，就是使用Visual Studio Code工具，直接把DevTool集成在编辑器中，而不是每个浏览器中
+
+1. Why do i need to learn a new DevTool for each browser?
+2. Why do i have to use different tools for authoring and debugging?
+3. Why isn't my editor more intergated with my browser(s)?
+4. Why can't i just connect my editor to my mobile device?
+5. Why are Devtools still bundled with our browsers?
+
 知识点：
 
 * web上进行调试多么麻烦
-* VS Code Chrome debug* 
+* VS Code Chrome debug
 * 直接在JS代码处断点，使用编译器来做debug调试，比以前纯web端调试流程简单多了，类似于node server的调试模式，不过webstorm很早就可以做了。。。
-* VS Code 与 chrome、Edge、nodejs交互的架构图
-* 讲师自己的一些思考，比如如何支持IOS等移动端设备调试
+* VS Code 与 chrome、Firefox、Edge、nodejs交互的架构图
+* VS Code 对移动端调试的支持
+
 
 ## 感受
 1. 这次南京的JSConf比上次去广州参加的FEDay靠谱多了，能感受到更浓厚的技术氛围，虽然广告和招聘还是无孔不入。其实参加这类型技术大会，主要还是为了拓宽下自己的思路和视野，了解下其他团队遇到问题后是如何思考和解决来产出他们的技术解决方案，看看这些业界的优秀团队都在玩些什么技术。看了饿了么的开源组件库我自己是有一些感触的，前端从远古时代到现在，组件库应该算是造轮子造的最多的一块了。最早的ExtJS、jQuery组件例如ztree，以及数不清的各类组件库，到后来我自己也做了PC端组件库Gazira和移动端的H5组件库Kami，有点换汤不换药的赶脚，这么多聪明的人为啥也没办法规划出一套通用解决方案呢。
@@ -188,19 +200,25 @@ google protocol buffer
 5. 在React技术栈中，map, filter, reduce等几个数组操作函数经常被提及
 6. 有个匿名人士在Lightning Talk环节的分享总结的太犀利了。
 7. 技术分享大会其实并不是为了专门过去学习技术的，这个效果并不会很好，你得抱着过去开拓眼界和与他人交流的心态，更好一点的是去学习大神们解决问题的思路，去感受下现场那个技术氛围，看看热爱技术的这么一群人是如何玩技术的人。
+8. 酒店很高大上，盒饭很不咋地，吃了两口跑外面去吃了。
 
 
 ## 附图：	
-[更多照片](http://mp.weixin.qq.com/s?__biz=MzA5NTQwMjc0NA==&mid=2650860988&idx=1&sn=61977a713b8f62851166f18a33f501c9&scene=1&srcid=0907XAqePlSwpJm08vB9Qxco#rd)
+[更多照片点击](http://mp.weixin.qq.com/s?__biz=MzA5NTQwMjc0NA==&mid=2650860988&idx=1&sn=61977a713b8f62851166f18a33f501c9&scene=1&srcid=0907XAqePlSwpJm08vB9Qxco#rd)
 
+红色区域为Vue.js实现的功能，其他由插件来提供⬇️
 ![img1](./img/WechatIMG13.jpeg)
+Dev Tools讲师提出的问题⬇️
 ![img2](./img/WechatIMG14.jpeg)
-![img3](./img/WechatIMG15.jpeg)
-![img4](./img/WechatIMG16.jpeg)
+45楼俯瞰南京城⬇️
 ![img5](./img/WechatIMG17.jpeg)
+James Kyle“亮瞎眼”的PPT配色⬇️
 ![img7](./img/WechatIMG19.jpeg)
+James Kyle超酷的ppt中的代码讲解部分⬇️
 ![img8](./img/WechatIMG20.jpeg)
+Design patterns popular in the current frontend framework world⬇️
 ![img9](./img/WechatIMG21.jpeg)
+James Kyle在回答问题
 ![img10](./img/WechatIMG22.jpeg)
 
 
