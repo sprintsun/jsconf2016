@@ -14,9 +14,9 @@ JSConf参会笔记
 ### 1、Vue.js the Past and the Future
 **关键字**：`Vue2.0`  `The Progressive Framework（渐进式框架）`
 
-没有在实际项目中使用过Vue.js, 所以并不是很熟悉，只能拿Angular或ReactJS来与之对比。听完尤大的介绍对Vue还是蛮敢兴趣的，比如它对前端更友好的模板，V2.0之后更快的速度以及更小的体积，蓬勃发展的社区。以后有中小项目还是很想试试手的。
+没有在实际项目中使用过Vue.js, 所以并不是很熟悉，只能拿Angular或ReactJS来与之对比。听完尤大的介绍对Vue还是蛮感兴趣的，比如它对前端更友好的模板，V2.0之后更快的速度以及更小的体积，蓬勃发展的社区。以后有中小项目还是很想试试手的。
 
-ps: 犹大被安利到weex团队担任技术顾问了，后续可以更好的整合weex来挑战ReactJS + ReactNative
+ps: 尤大被安利到weex团队担任技术顾问了，后续可以更好的整合weex来挑战ReactJS + ReactNative
 
 介绍点如下：
 
@@ -25,7 +25,7 @@ ps: 犹大被安利到weex团队担任技术顾问了，后续可以更好的整
 	* virtual DOM，这块跟React最大不同是更智能的渲染机制，提前生成了依赖树，不用一层层递归判断shouldComponentUpdate
 	* 推荐优先使用Vue模板，实在较难实现的逻辑才使用Render Function来做
 	* Server Side Rendering介绍
-	* vue && veex
+	* vue && weex
 	* 如果你积极帮助回答issue，能够贡献PR，会有机会被加入到Vue的开发团队中去	
 ### 2、How to Build a Compiler
 分享者是来自Facebook的[James Kyle](https://github.com/thejameskyle)，超有极客风范的, babel及flow的核心贡献者之一。主题是如何去构建一个编译器，并且现场直接演示代码，如何构建一个简单的编译器。最大感触是PPT怎么可以做的这么任性这么炫，“亮瞎了眼”的配色，代码介绍时超赞的效果，我真心不知道怎么做出来的（回去得好好研究下）。[编译器代码](https://github.com/thejameskyle/the-super-tiny-compiler/blob/master/super-tiny-compiler.js)
@@ -119,7 +119,7 @@ Memory leaks
 
 chrome dev tools
 * 无法处理较大文件
-* 评估不够准确，如果没有Constructor，无法找打对应的类
+* 评估不够准确，如果没有Constructor，无法找到对应的类
 
 GC
 solution: 
@@ -158,13 +158,14 @@ Design patterns popular in the current frontend framework world:
 来自腾讯娱乐事业部？的讲师，介绍了一个H5单页应用如何进行优化的整个过程。很多人吐槽这个除了Server Render其他的都跟React没啥关系，大量网络优化的介绍，真是标题党啊。。。
 
 优化步骤：
-SERVER RENDER
-减少RTT
-TCP -> UDP
-BUFFER
-CACHE
-component config 配置开关
-google protocol buffer
+
+* SERVER RENDER
+* 减少RTT
+* TCP -> UDP
+* BUFFER
+* CACHE
+* component config 配置开关
+* google protocol buffer
 
 
 ### 17、Build a Better App with Mapbox
