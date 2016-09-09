@@ -190,7 +190,7 @@ Design patterns popular in the current frontend framework world:
 
 * web上进行调试多么麻烦
 * VS Code Chrome debug
-* 直接在JS代码处断点，使用编译器来做debug调试，比以前纯web端调试流程简单多了，类似于node server的调试模式，不过webstorm很早就可以做了。。。
+* 直接在JS代码处断点，使用编译器来做debug调试，比以前纯web端调试流程简单多了，类似于node server的调试模式，不过webstorm + [jetbrains ide support](https://chrome.google.com/webstore/detail/jetbrains-ide-support/hmhgeddbohgjknpmjagkdomcpobmllji?hl=zh-CN)很早就可以做了。。。
 * VS Code 与 chrome、Firefox、Edge、nodejs交互的架构图
 * VS Code 对移动端调试的支持
 
